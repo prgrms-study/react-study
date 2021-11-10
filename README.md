@@ -1,14 +1,18 @@
-# 리액트 스터디
-
-> [벨로퍼트와 함께하는 모던 리액트](https://react.vlpt.us/)를 토대로 리액트 개념을 학습하는 스터디
-
-
+<p align="middle" >
+  <img width="200px;" src="https://user-images.githubusercontent.com/41064875/141121330-5619ba38-e0d1-4638-b7f5-520b6da46821.png"/>
+</p>
+<h2 align="middle">리액트 스터디</h2>
+<p align="middle"><a href="https://react.vlpt.us/">벨로퍼트와 함께하는 모던 리액트</a>를 토대로 리액트 개념을 학습하는 스터디</p>
+<p align="middle">
+  <img src="https://img.shields.io/badge/React-61dafb?style=flat-square&logo=React&logoColor=white"/></a>&nbsp
+  <img src="https://img.shields.io/badge/language-md-md.svg?style=flat-square"/>
+</p>
 
 <br />
 
 
 
-### 👨‍👩‍👧‍👦 스터디원
+## 👨‍👩‍👧‍👦 스터디원
 
 | 이름   | 깃허브                                          |
 | ------ | ----------------------------------------------- |
@@ -25,7 +29,7 @@
 
 
 
-### 📆 기간
+## 📆 기간
 
 - 2021.11.11 ~ 진행중
 
@@ -37,7 +41,7 @@
 
 
 
-### 📌 진행방식
+## 📌 진행방식
 
 - 학습자료 : [벨로퍼트와 함께하는 모던 리액트](https://react.vlpt.us/) 
 - 매일 정해진 분량을 각자 학습합니다.
@@ -51,7 +55,7 @@
 
 
 
-###  📦 제출방식
+##  📦 제출방식
 
 - 본인의 깃허브 닉네임으로 브랜치를 생성합니다.
 - 각자 학습한 내용을 일별로 PR합니다.
@@ -66,7 +70,7 @@
 
 
 
-### 📝 컨벤션
+## 📝 컨벤션
 
 - PR 컨벤션
 
