@@ -1,17 +1,28 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import { useTodoState } from '../contexts/TodoContext';
-import { parseDate } from '../utils/date';
+// import { parseDate } from '../utils/date';
 
 const TodoHead = ({ ...props }) => {
-  const { year, month, date, day } = parseDate(new Date());
+  // const { year, month, date, day } = parseDate(new Date());
+  const today = new Date();
+  const dateString = today.toLocaleDateString('ko-KR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+  console.log(dateString);
+  const dayName = today.toLocaleDateString('ko-KR', { weekday: 'long' });
+  console.log(dayName);
+
   const todos = useTodoState();
-  console.log(todos);
 
   return (
     <Container {...props}>
-      <h1>{`${year}년 ${month}월 ${date}일`}</h1>
-      <p className="day">{`${day}요일`}</p>
+      {/* <h1>{`${year}년 ${month}월 ${date}일`}</h1> */}
+      <h1>{dateString}</h1>
+      {/* <p className="day">{`${day}요일`}</p> */}
+      <p className="day">{dayName}</p>
       <p className="left-todo">
         할 일 {todos.filter(todo => !todo.done).length}개 남음
       </p>

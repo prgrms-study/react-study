@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import React from 'react';
 
 const TodoTemplate = styled.div`
   width: 512px;
