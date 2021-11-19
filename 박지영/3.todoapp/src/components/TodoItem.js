@@ -8,7 +8,7 @@ const Remove = styled.div`
   align-items: center;
   justify-content: center;
   color: #dee2e6;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   &:hover {
     color: #ff6b6b;

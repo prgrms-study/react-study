@@ -1,6 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import TodoCreate from './components/TodoCreate';
+import TodoCreate from './components/TodoCreate.jsx';
 import TodoHead from './components/TodoHead';
 import TodoList from './components/TodoList';
 import TodoTemplate from './components/TodoTemplate';
