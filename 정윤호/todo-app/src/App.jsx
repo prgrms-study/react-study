@@ -5,13 +5,17 @@ import TodoProvider from './contexts/TodoContext';
 
 const App = () => {
   return (
-    <TodoProvider>
-      <TodoTemplate>
-        <TodoHead />
-        <TodoList />
-        <TodoCreate />
-      </TodoTemplate>
-    </TodoProvider>
+    <userProvider>
+      <dataProvider>
+        <TodoProvider>
+          <TodoTemplate>
+            <TodoHead />
+            <TodoList />
+            <TodoCreate />
+          </TodoTemplate>
+        </TodoProvider>
+      </dataProvider>
+    </userProvider>
   );
 };
 
