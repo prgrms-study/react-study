@@ -338,7 +338,7 @@ function HistorySample({ history }) {
 
 withRouter HoC 는 라우트 컴포넌트가 아닌곳에서 match / location / history 를 사용해야 할 때 쓰면 된다.
 
-
+###### 
 
 ```jsx
 import React from 'react';
@@ -415,7 +415,7 @@ const App = () => {
 };
 ```
 
-
+###### 
 
 ### NavLink
 
