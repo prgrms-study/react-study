@@ -346,6 +346,16 @@ ReactDOM.render(
 
 redux-thunk를 사용하면 **액션 객체가 아닌 함수를 디스패치 할 수 있다.** 
 
+일반적인 dispatch는 값을 반환하지만
+
+dispatch를 실행하면서 다양한 함수의 동작을 하고싶을 때가 있을 것이다. 그리고 함수를 분리하고 싶을 때가 있을것이다.
+
+**가장 유용하게 사용할 수 있는 케이스는 비동기 로직 이후에 dispatch를 하기 위할 때이다.**
+
+> **일반적인 dispatch의 인자로 전달되는 액션생성함수는 `async/await` 을 적용할 수 없다.**
+
+dispatch, 리듀서 로직에는 비동기로직이 없는 순수함수여야한다.
+
 ```js
 const thunk = store => next => action =>
   typeof action === 'function'
@@ -353,13 +363,17 @@ const thunk = store => next => action =>
     : next(action)
 ```
 
+redux-thunk 또한 미들웨어이다. redux-thunk의 로직은 위와 같다.
+
+인자 `action`  이 함수이면 `store.dispatch`, `store.getState` 를 인자로 넘겨서 실행을 시킨다.
 
 
-함수를 디스패치 할 때에는, 
 
-해당 함수에서 `dispatch` 와 `getState` 를 파라미터로 받아와주어야 한다.
-
-이 함수를 **만들어주는 함수**를 우리는 thunk 라고 부른다.
+>  함수를 디스패치 할 때에는, 
+>
+> 해당 함수에서 `dispatch` 와 `getState` 를 파라미터로 받아와주어야 한다.
+>
+> 이 함수를 **만들어주는 함수**를 우리는 thunk 라고 부른다.
 
 
 
