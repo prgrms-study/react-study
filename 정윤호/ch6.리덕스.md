@@ -60,6 +60,14 @@ function counter(state, action) {
 한 애플리케이션당 하나의 스토어
 현재의 앱 **상태**와, **리듀서**, **내장함수** 포함
 
+```js
+import { createStore } from 'redux';
+
+const store = createStore(rootReducer); // 스토어를 만듭니다.
+```
+
+
+
 
 
 ### 디스패치 (dispatch)
@@ -67,6 +75,8 @@ function counter(state, action) {
 스토어의 내장함수 중 하나, 액션을 파라미터로 받아 액션을 발생 시키는 함수
 
 ```js
+const dispatch = useDispatch();
+
 dispatch(action)
 ```
 
@@ -768,8 +778,8 @@ export default TodosContainer;
 >
 > ```js
 > useSelector(state => ({
->   number: state.counter.number,
->   diff: state.counter.diff,
+>     number: state.counter.number,
+>     diff: state.counter.diff,
 > }));
 > ```
 >
