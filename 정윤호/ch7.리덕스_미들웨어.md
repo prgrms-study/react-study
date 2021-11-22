@@ -200,6 +200,7 @@ const myLogger = store => next => action => {
   console.log('\t', store.getState()); // '\t' 는 탭 문자 입니다.
 
   return result; // 여기서 반환하는 값은 dispatch(action)의 결과물이 됩니다. 기본: undefined
+  // return을 반환하지 않아도 된다.
 };
 
 export default myLogger;
